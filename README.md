@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+### What is React-Query ? 
+ - react에서 비동기 로직을 쉽게 다루게 해주는 라이브러리이다.
+ - 서버 상태를 가져오고, 캐싱하고, 동기화하고, 업데이트하는 작업을 쉽개 해준다.
+ - react 상태 관리는 클라이언트 상태를 관리하는데에 유용하지만 비동기 또는 서버 상태를 사용하는 것엔 어려움이 있음.
+ 
+### 서버 상태 사용의 어려운 점
+ - 제어하거나 소유하지 않은 위치에 원격으로 유지됨(소유권x)
+ - 서버 데이터를 가져오기 위한 비동기 API가 필요함
+ - 서버데이터는 공동 소유권을 의미하며 사용자가 모른느 사이 변경될 수 있음
+ - 프로그램 내에서 오래된 데이터가 될 수 있음.
+ 
+### 서버 상태에서 발생할 수 있는 문제점 
+ - 캐싱
+ - 동일한 데이터에 대한 요청을 단일 전송을 하는 경우
+ - 백그라운드에서 오래된 데이터가 업데이트 될 수 있음(서버의 데이터는 변하기 때문에)
+ - 데이터의 업데이트를 빠르게 반영해야한다.
+ - 페이지네이션, 지연 로딩 데이터의 성능 최적화 
+ - 서버 상태의 메모리 및 가비지 컬렉션 관리
+ - 구조 공유(Structural Sharing)를 사용하여 쿼리 결과를 메모
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 그래서..? 
+ - react-query는 서버 상태를 관리하기 좋은 라이브러리이다.
+ - 별도의 구성없이 즉시 사용할 수 있고, 사용자 지정 설정이 가능함.
 
-## Available Scripts
+### 장점 
+ - 코드의 간결화. (소스 참조)
+ - 새로운 서버의 상태 데이터를 보다 쉽게 유지 관리할 수 있음
+ - 어플리케이션의 속도와 응답성을 향상.
+ - 메모리 성능 향상
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### API List 
+- [x] useQuery : fetch a query
+- [x] useQueries : fetch a variable number of queries
+- [ ] useInfiniteQuery : 
+- [ ] useMutation : 
+- [ ] useIsFetching : 
+- [ ] QueryClient : 
+- [ ] QueryClientProvider :  
+- [ ] useQueryClient :  
+- [ ] QueryCache :  
+- [ ] MutationCache :  
+- [ ] QueryObserver :  
+- [ ] InfiniteQueryObserver :  
+- [ ] QueriesObserver :
+- [ ] QueryErrorResetBoundary :
+- [ ] useQueryErrorResetBoundary :
+- [ ] focusManager :
+- [ ] onlineManager :
+- [ ] setLogger : 
+- [ ] hydration : 

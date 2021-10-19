@@ -32,7 +32,7 @@
 - [x] useQuery : fetch a query
 - [x] useQueries : fetch a variable number of queries
 - [ ] useInfiniteQuery : 
-- [ ] useMutation : 
+- [x] useMutation : fetch a query for update.
 - [ ] useIsFetching : 
 - [ ] QueryClient : 
 - [ ] QueryClientProvider :  

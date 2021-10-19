@@ -10,7 +10,8 @@ const Header = ({ path, location , history}) => {
             <SLink to ="/" selected={ location.pathname === "/"}>home</SLink>
             <SLink to="/useQuery" selected={ location.pathname === "/useQuery"}>useQuery</SLink>
             <SLink to="/useQueries" selected={ location.pathname === "/useQueries"}>useQueries</SLink>
-            <SLink to="/useQuer3y">useQuery3</SLink>
+            <SLink to="/useInfiniteQuery" selected={ location.pathname === "/useInfiniteQuery"}>useInfiniteQuery</SLink>
+            <SLink to="/useMutation" selected={ location.pathname === "/useMutation"}>useMutation</SLink>
         </Container>
     )
 }

@@ -16,7 +16,6 @@ const UseQueries = () => {
         }
     ]);
 
-    console.log(result);
     useEffect(() => {
         console.log('render useQueries component');
     },[]);

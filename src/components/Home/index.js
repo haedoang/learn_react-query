@@ -1,6 +1,5 @@
 import { Container, Note } from '../Style';
 
-
 const Home = () => {
     return (
         <Container>

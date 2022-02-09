@@ -5,9 +5,9 @@ import UseQuery from './useQuery';
 import UseQueries from './useQueries';
 import UseInfiniteQuery from './useInfiniteQuery';
 import UseMutation from './useMutation';
+import DependentQueries from './useDependentQueries'
 
 const RouterComponent = () =>  {
- 
     return (
             <Router>
                 <Header />
@@ -16,7 +16,7 @@ const RouterComponent = () =>  {
                 <Route path="/useQueries" component={UseQueries} />
                 <Route path="/useInfiniteQuery" component={UseInfiniteQuery} />
                 <Route path="/useMutation" component={UseMutation} />
-                <Redirect path="*" to="/"/>
+                <Route path="/dependant-queries" component={DependentQueries}/>
             </Router>
         )
 }

@@ -10,13 +10,13 @@ const UseMutation = () => {
     const {
         data,
         error,
-        isError,
+        //isError,
         isIdle,
         isLoading,
         isPaused,
         isSuccess,
         mutate,
-        mutateAsync,
+        //mutateAsync,
         reset,
         status,
       } =

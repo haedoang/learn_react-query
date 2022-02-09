@@ -139,8 +139,6 @@ const UseQuery = () => {
                 </Row>
             </Section>   
         </Container>
-
-
     )
 
 }

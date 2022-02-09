@@ -48,3 +48,7 @@
 - [ ] onlineManager :
 - [ ] setLogger : 
 - [ ] hydration : 
+
+
+### Features 
+- [x] Depenedent Queries : depend on previous ones to finish before they can execute.  

@@ -1,10 +1,7 @@
 import { SLink, Container } from '../Style';
 import { withRouter } from 'react-router-dom';
 
-const Header = ({ path, location , history}) => {
-    console.log(path, location, history);
-
-
+const Header = ({ location }) => {
     return (
         <Container>
             <SLink to ="/" selected={ location.pathname === "/"}>home</SLink>
@@ -12,6 +9,7 @@ const Header = ({ path, location , history}) => {
             <SLink to="/useQueries" selected={ location.pathname === "/useQueries"}>useQueries</SLink>
             <SLink to="/useInfiniteQuery" selected={ location.pathname === "/useInfiniteQuery"}>useInfiniteQuery</SLink>
             <SLink to="/useMutation" selected={ location.pathname === "/useMutation"}>useMutation</SLink>
+            <SLink to="/dependant-queries" selected={ location.pathname === "/useDependentQueries"}>Depenent-Queries</SLink>
         </Container>
     )
 }

@@ -9,6 +9,6 @@ const api = axios.create({
 export const PostAPI = {
     getAll : () =>api.get('posts'),
     getDetail : (no) => api.get(`posts/${no}`),
-    getComment : (postId) => api.get(`posts/${postId}`),
+    getComment : (postId) => api.get(`posts/${postId}/comments`),
     savePost : (obj) => api.post('posts', obj)
 }
